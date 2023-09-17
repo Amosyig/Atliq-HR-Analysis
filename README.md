@@ -1,4 +1,4 @@
-# Atliq-HR-Analysis
+# Atliq-Hardware-HR-Analysis
 
 ![](atliq_hr_image.jpg)
 
