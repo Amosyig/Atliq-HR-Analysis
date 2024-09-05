@@ -1,0 +1,14 @@
+let
+    Source = Excel.Workbook(File.Contents("C:\Users\Yole Igedegbe\Documents\hr_analytics_codebasics\dataset\Attendance Sheet 2022-2023_Masked.xlsx"), null, true),
+    #"Filtered Rows" = Table.SelectRows(Source, each [Name] = Worksheet),
+    #"Removed Other Columns" = Table.SelectColumns(#"Filtered Rows",{"Data"}),
+    Data = #"Removed Other Columns"{0}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(Data, [PromoteAllScalars=true]),
+    #"Removed Top Rows" = Table.Skip(#"Promoted Headers",1),
+    #"Renamed Columns" = Table.RenameColumns(#"Removed Top Rows",{{"AtliQ", "Employee Code"}, {"Column2", "Name"}}),
+    #"Unpivoted Other Columns" = Table.UnpivotOtherColumns(#"Renamed Columns", {"Employee Code", "Name"}, "Attribute", "Value"),
+    #"Renamed Columns1" = Table.RenameColumns(#"Unpivoted Other Columns",{{"Attribute", "Date"}}),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Renamed Columns1",{{"Date", type date}}),
+    #"Removed Errors" = Table.RemoveRowsWithErrors(#"Changed Type1", {"Date"})
+in
+    #"Removed Errors"
