@@ -1,8 +1,6 @@
 # Atliq-Hardware-HR-Analysis
 
-
-
-![](atliq_hardware_image.jpg)
+![82454849_9898504](https://github.com/user-attachments/assets/8d6cf537-2862-447d-953d-b0b76f3c4ca5)
 
 
 
@@ -27,12 +25,12 @@ This report addresses the following business questions:
 
 
 ## Modelling
-#here insert the image of the data model
+![data_model](https://github.com/user-attachments/assets/684cc356-e590-441b-b0aa-5296679a0aa2)
+
 
 
 ## Visualization:
-
-#here insert the image of the dashboard
+![updated_dashboard](https://github.com/user-attachments/assets/6db511fc-bfc3-473a-bb37-fc3f973644f4)
 
 
 
