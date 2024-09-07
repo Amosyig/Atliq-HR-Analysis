@@ -49,8 +49,8 @@ Based on the observations, the key takeaways are:
 
 3. Track Presence Data Continuously: Ongoing monitoring of presence data throughout the year and into the next can help identify any seasonal trends, allowing for better anticipation and planning.
 
-This is a link to a medium post for more details: 
-![Lorem Ipsum]()
+
+this link here give a more detailed walk through for the data analysis process: https://www.datascienceportfol.io/yole_amos/projects/5
 
 Thanks!
 
